@@ -15,6 +15,9 @@ export class BookService {
   getBooks(){
     return this.http.get(`${baseURL}/book/`); 
   }
+  getBookById(catId){
+    return this.http.get(`${baseURL}/book/category/${catId}`); 
+  }
  
  
 }

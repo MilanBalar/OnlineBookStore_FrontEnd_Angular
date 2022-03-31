@@ -11,13 +11,16 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import { NavbarComponent } from './common/navbar/navbar.component';
+import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from "ngx-ui-loader";
+import { LoadBookComponent } from './common/load-book/load-book.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookListComponent,
     SidebarComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoadBookComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,8 @@ import { NavbarComponent } from './common/navbar/navbar.component';
     MatIconModule,
     MatCardModule,
     MatListModule,
+    NgxUiLoaderHttpModule,
+    NgxUiLoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
